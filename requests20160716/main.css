@@ -1,0 +1,32 @@
+.wrap {
+   width:904px;
+   margin:0 auto;
+}
+.column {
+  border: 1px solid #000000;
+}
+.col1 {
+   float:left;
+   width:600px;
+}
+.col2 {
+   float:right;
+   width:300px;
+}
+
+/* http://stackoverflow.com/questions/17904018/show-hide-div-based-on-browser-size-using-only-css */
+@media all and (min-width: 1920px) {
+    .wrap .x1920 {display:block;}
+    .wrap .x900 {display:none;}
+    .wrap .x720 {display:none;}
+}
+@media all and (min-width: 900px) {
+    .wrap .x1920 {display:none;}
+    .wrap .x900 {display:block;}
+    .wrap .x720 {display:none;}
+}
+@media all and (min-width: 720px) {
+    .wrap .x1920 {display:none;}
+    .wrap .x900 {display:none;}
+    .wrap .x720 {display:block;}
+}
